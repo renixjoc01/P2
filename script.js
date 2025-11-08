@@ -6,7 +6,8 @@ function sumarValores() {
   const n3 = parseFloat(document.getElementById("num3").value);
 
   if (isNaN(n1) || isNaN(n2) || isNaN(n3)) {
-    alert("Por favor, ingrese los tres valores numéricos.");
+    document.getElementById("resultado1").innerText =
+      "⚠️ Por favor, ingrese los tres números correctamente.";
     return;
   }
 
@@ -19,7 +20,8 @@ function sumarValores() {
 function calcularCuadrado() {
   const num = parseFloat(document.getElementById("numeroCuadrado").value);
   if (isNaN(num)) {
-    alert("Por favor, ingrese un número válido.");
+    document.getElementById("resultado2").innerText =
+      "⚠️ Por favor, ingrese un número válido.";
     return;
   }
   document.getElementById("resultado2").innerText =
@@ -34,7 +36,8 @@ function calcularPromedio() {
   const n3 = parseFloat(document.getElementById("nota3").value);
 
   if (!nombre || isNaN(n1) || isNaN(n2) || isNaN(n3)) {
-    alert("Complete todos los campos correctamente.");
+    document.getElementById("resultado3").innerText =
+      "⚠️ Complete todos los campos correctamente.";
     return;
   }
 
@@ -47,9 +50,11 @@ function calcularPromedio() {
 function convertirUnidades() {
   const metros = parseFloat(document.getElementById("metros").value);
   if (isNaN(metros)) {
-    alert("Ingrese un valor válido en metros.");
+    document.getElementById("resultado4").innerText =
+      "⚠️ Ingrese un valor válido en metros.";
     return;
   }
+
   const cm = metros * 100;
   const km = metros / 1000;
   document.getElementById("resultado4").innerText =
@@ -62,11 +67,14 @@ function compararValores() {
   const v2 = parseFloat(document.getElementById("valor2").value);
 
   if (isNaN(v1) || isNaN(v2)) {
-    alert("Ingrese ambos números.");
+    document.getElementById("resultado5").innerText =
+      "⚠️ Ingrese ambos números.";
     return;
   }
+
   if (v1 === v2) {
-    alert("Los números no pueden ser iguales.");
+    document.getElementById("resultado5").innerText =
+      "⚠️ Los números no pueden ser iguales.";
     return;
   }
 
