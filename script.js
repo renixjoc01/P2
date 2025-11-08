@@ -1,12 +1,18 @@
 // === Calculadora Científica Básica ===
-// Programación Web III - Ing. Alonso González
+// Programación Web III - Renix Guillen
+function sumarValores() {
+  const n1 = parseFloat(document.getElementById("num1").value);
+  const n2 = parseFloat(document.getElementById("num2").value);
+  const n3 = parseFloat(document.getElementById("num3").value);
 
-// 1️⃣ Suma de tres valores constantes
-function sumarConstantes() {
-  const a = 10, b = 14, c = 20;
-  const suma = a + b + c;
+  if (isNaN(n1) || isNaN(n2) || isNaN(n3)) {
+    alert("Por favor, ingrese los tres valores numéricos.");
+    return;
+  }
+
+  const suma = n1 + n2 + n3;
   document.getElementById("resultado1").innerText =
-    `La suma de los valores constantes (${a}, ${b}, ${c}) es: ${suma}`;
+    `La suma de los valores ingresados (${n1}, ${n2}, ${n3}) es: ${suma}`;
 }
 
 // 2️⃣ Cuadrado de un número
