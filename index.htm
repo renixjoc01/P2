@@ -9,29 +9,53 @@
 <body>
   <div class="container">
     <h1>Calculadora Científica Básica</h1>
+    <p>Programación Web III (2229) - Ing. Alonso González</p>
 
-    <div class="calculadora">
-      <label for="num1">Número 1:</label>
-      <input type="number" id="num1">
+    <!-- 1️⃣ Suma de tres valores -->
+    <section>
+      <h2>1. Suma de tres valores constantes</h2>
+      <button onclick="sumarConstantes()">Calcular Suma</button>
+      <p id="resultado1"></p>
+    </section>
 
-      <label for="num2">Número 2:</label>
-      <input type="number" id="num2">
+    <!-- 2️⃣ Cuadrado de un número -->
+    <section>
+      <h2>2. Cuadrado de un número</h2>
+      <input type="number" id="numeroCuadrado" placeholder="Ingrese un número entero">
+      <button onclick="calcularCuadrado()">Calcular Cuadrado</button>
+      <p id="resultado2"></p>
+    </section>
 
-      <label for="num3">Número 3 (opcional):</label>
-      <input type="number" id="num3">
+    <!-- 3️⃣ Promedio de calificaciones -->
+    <section>
+      <h2>3. Promedio de calificaciones</h2>
+      <input type="text" id="nombreEstudiante" placeholder="Nombre del estudiante">
+      <input type="number" id="nota1" placeholder="Calificación 1">
+      <input type="number" id="nota2" placeholder="Calificación 2">
+      <input type="number" id="nota3" placeholder="Calificación 3">
+      <button onclick="calcularPromedio()">Calcular Promedio</button>
+      <p id="resultado3"></p>
+    </section>
 
-      <div class="botones">
-        <button onclick="sumar()">Sumar 3 valores</button>
-        <button onclick="cuadrado()">Cuadrado</button>
-        <button onclick="promedio()">Promedio</button>
-        <button onclick="convertir()">Conversión (m)</button>
-        <button onclick="comparar()">Comparar</button>
-      </div>
+    <!-- 4️⃣ Conversión de unidades -->
+    <section>
+      <h2>4. Conversión de unidades (metros)</h2>
+      <input type="number" id="metros" placeholder="Ingrese metros">
+      <button onclick="convertirUnidades()">Convertir</button>
+      <p id="resultado4"></p>
+    </section>
 
-      <p id="resultado"></p>
-    </div>
+    <!-- 5️⃣ Comparación de dos valores -->
+    <section>
+      <h2>5. Comparación de dos valores</h2>
+      <input type="number" id="valor1" placeholder="Primer número">
+      <input type="number" id="valor2" placeholder="Segundo número">
+      <button onclick="compararValores()">Comparar</button>
+      <p id="resultado5"></p>
+    </section>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
