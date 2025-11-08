@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Científica Básica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora Científica Básica</h1>
+
+    <div class="calculadora">
+      <label for="num1">Número 1:</label>
+      <input type="number" id="num1">
+
+      <label for="num2">Número 2:</label>
+      <input type="number" id="num2">
+
+      <label for="num3">Número 3 (opcional):</label>
+      <input type="number" id="num3">
+
+      <div class="botones">
+        <button onclick="sumar()">Sumar 3 valores</button>
+        <button onclick="cuadrado()">Cuadrado</button>
+        <button onclick="promedio()">Promedio</button>
+        <button onclick="convertir()">Conversión (m)</button>
+        <button onclick="comparar()">Comparar</button>
+      </div>
+
+      <p id="resultado"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
